@@ -1,56 +1,32 @@
-.tank-container {
-  display: flex;
- 
-}
-
-.tank {
-  width: 100px; /* Fixed width for the tank */
-  height: 200px; /* Fixed height for the tank */
-  border: 2px solid #000; /* Border for the tank */
-  position: relative; /* Positioning for the water */
-}
-
-.water {
-  position: absolute; /* Position water inside the tank */
-  bottom: 0; /* Align water to the bottom of the tank */
-  width: 100%; /* Full width of the tank */
-  left: 0;
-}
-
-.level-25 {
-  height: 25%; /* 25% height for water level */
-  background-color: rgba(0, 123, 255, 0.5); /* Light blue for 25% */
-}
-
-.level-50 {
-  height: 50%; /* 50% height for water level */
-  background-color: rgba(40, 167, 69, 0.5); /* Light green for 50% */
-}
-
-.level-75 {
-  height: 75%; /* 75% height for water level */
-  background-color: rgba(255, 193, 7, 0.5); /* Light yellow for 75% */
-}
-/* .flowchart-container {
+.reactflow-wrapper {
   position: relative;
-  height: 500px; 
-} */
-
-/* .flowchart-content {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-}
- */
-/* .flowchart-item {
-  position: absolute;
-  transform: translateX(-50%);
+  border: 1px solid #ddd;
+  overflow: auto;
 }
 
-.connection {
-  position: absolute;
-  background-color: black;
-} */
+img {
+  pointer-events: none; /* Ensure image itself doesn't interfere with resizing */
+}
 
+
+.dndnode {
+  padding: 10px;
+  margin: 10px;
+  background: #9ca8b3;
+  color: #fff;
+  cursor: grab;
+  border-radius: 5px;
+  text-align: center;
+}
+
+aside {
+  width: 20%;
+  background: #f4f4f4;
+  padding: 10px;
+}
+
+.description {
+  margin-bottom: 10px;
+}
